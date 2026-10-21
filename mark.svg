@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-labelledby="sv-title">
+  <title id="sv-title">Sri Varahi</title>
+  <!-- Original Sri Varahi emblem: royal tile, turmeric crescent, "SV" monogram. Colours from the app's design tokens (sl-royal #2a3494, sl-turmeric #ffd400). -->
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#2a3494"/>
+  <path d="M14 46a20 20 0 0 0 36 0a30 30 0 0 1-36 0z" fill="#ffd400"/>
+  <text x="32" y="38" text-anchor="middle" font-family="'Source Sans 3','Segoe UI',Arial,sans-serif" font-size="25" font-weight="800" letter-spacing="-0.5" fill="#ffffff">SV</text>
+</svg>

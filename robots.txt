@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ayaska-in.github.io/sri-varahi/sitemap.xml

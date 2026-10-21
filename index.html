@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sri Varahi – Your local shops, online. Fair for every shop.</title>
+<meta name="description" content="Sri Varahi puts neighbourhood kirana stores, supermarkets and mini-marts online in one app. Each shop keeps its own prices, its own riders and its own UPI payments. Free pilot for local shops.">
+<meta name="keywords" content="Sri Varahi, local shops online, kirana delivery app, grocery marketplace India, hyperlocal delivery, sell groceries online, Bengaluru grocery delivery, Odisha grocery delivery">
+<link rel="canonical" href="https://ayaska-in.github.io/sri-varahi/">
+<meta name="theme-color" content="#2a3494">
+<link rel="icon" href="mark.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sri Varahi">
+<meta property="og:title" content="Sri Varahi – Your local shops, online">
+<meta property="og:description" content="One app for the shops on your street. Each shop sets its own prices, delivers with its own riders and is paid straight to its own UPI.">
+<meta property="og:url" content="https://ayaska-in.github.io/sri-varahi/">
+<meta property="og:image" content="https://ayaska-in.github.io/sri-varahi/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {"@type":"Organization","name":"Sri Varahi","url":"https://ayaska-in.github.io/sri-varahi/","logo":"https://ayaska-in.github.io/sri-varahi/og.png","description":"A marketplace app that puts neighbourhood shops online, with each shop keeping its own prices, riders and payments."},
+ {"@type":"WebSite","name":"Sri Varahi","url":"https://ayaska-in.github.io/sri-varahi/"},
+ {"@type":"FAQPage","mainEntity":[
+  {"@type":"Question","name":"Who gets the money when a customer pays?","acceptedAnswer":{"@type":"Answer","text":"The shop. Customers pay by cash on delivery or straight to the shop's own UPI ID. Sri Varahi never holds the money."}},
+  {"@type":"Question","name":"What does a shop pay to join?","acceptedAnswer":{"@type":"Answer","text":"Nothing during the free pilot: the first shops get the full app free for the first few months, with up to two stores per business."}},
+  {"@type":"Question","name":"Who delivers the orders?","acceptedAnswer":{"@type":"Answer","text":"Each shop's own riders, in delivery slots the customer picks. A 4-digit PIN confirms every delivery."}},
+  {"@type":"Question","name":"Which languages does the app speak?","acceptedAnswer":{"@type":"Answer","text":"English, Telugu, Odia and Hindi."}}
+ ]}
+]}
+</script>
+<style>
+:root{--royal:#2a3494;--royal-2:#3b47c2;--ink:#14162b;--muted:#5a5e78;--line:#e6e4dc;--bg:#fbf9f3;--card:#fff;--turmeric:#ffd400;--leaf:#1f7a4d;--sun:#f08a24;--rose:#e85d75;--r:20px}
+@media (prefers-color-scheme:dark){:root{--ink:#eef0ff;--muted:#a9acc6;--line:#2a2d48;--bg:#0f1124;--card:#171a33;--royal-2:#9aa6f5}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font:16px/1.6 Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg);overflow-x:hidden}
+h1,h2,h3{font-family:"Plus Jakarta Sans",Inter,sans-serif;line-height:1.15;margin:0}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:14px;font-weight:700;text-decoration:none;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-main{background:var(--turmeric);color:#1b1b1b;box-shadow:0 10px 30px rgba(255,212,0,.35)}
+.btn-ghost{border:2px solid rgba(255,255,255,.5);color:#fff}
+.btn-royal{background:var(--royal);color:#fff}
+/* nav */
+nav{position:sticky;top:0;z-index:20;backdrop-filter:blur(12px);background:color-mix(in srgb,var(--bg) 80%,transparent);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:16px;height:64px}
+.brand{display:flex;align-items:center;gap:10px;font-family:"Plus Jakarta Sans";font-weight:800;font-size:19px;text-decoration:none}
+.brand img{width:36px;height:36px}
+nav .links{margin-left:auto;display:flex;gap:22px;font-weight:600;font-size:15px}
+nav .links a{text-decoration:none;color:var(--muted)}nav .links a:hover{color:var(--ink)}
+@media(max-width:760px){nav .links .hide-s{display:none}}
+/* hero */
+.hero{position:relative;color:#fff;background:radial-gradient(1200px 600px at 80% -10%,#4b57d6 0,transparent 60%),linear-gradient(160deg,#1d2470,#2a3494 55%,#3a2a8f);overflow:hidden;padding:80px 0 110px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr}.phone{margin:20px auto 0}}
+.eyebrow{display:inline-block;padding:6px 12px;border-radius:999px;background:rgba(255,255,255,.12);font-size:13px;font-weight:600;letter-spacing:.3px;margin-bottom:18px}
+.hero h1{font-size:clamp(38px,6vw,64px);font-weight:800;letter-spacing:-1px}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--turmeric),#ffb347);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lead{font-size:clamp(17px,2vw,20px);color:#dfe2ff;max-width:560px;margin:20px 0 30px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.blob{position:absolute;border-radius:50%;filter:blur(60px);opacity:.45;animation:float 14s ease-in-out infinite}
+.b1{width:340px;height:340px;background:#ffd400;left:-120px;bottom:-140px}
+.b2{width:280px;height:280px;background:#e85d75;right:10%;top:-120px;animation-delay:-5s}
+@keyframes float{0%,100%{transform:translate(0,0)}50%{transform:translate(30px,-25px)}}
+/* phone mockup */
+.phone{width:300px;height:600px;border-radius:44px;background:#0d0f22;padding:12px;box-shadow:0 40px 80px rgba(0,0,0,.45),inset 0 0 0 2px #2b2f55;position:relative;animation:tilt 8s ease-in-out infinite}
+@keyframes tilt{0%,100%{transform:rotate(-3deg) translateY(0)}50%{transform:rotate(2deg) translateY(-12px)}}
+.screen{height:100%;border-radius:34px;background:#fbf9f3;overflow:hidden;color:#14162b;font-size:12px;position:relative}
+.s-top{background:#2a3494;color:#fff;padding:14px 14px 12px}
+.s-top b{font-family:"Plus Jakarta Sans";font-size:15px}
+.s-search{margin-top:8px;background:#fff;color:#888;border-radius:10px;padding:7px 10px}
+.s-sec{padding:10px 12px 0;font-weight:700;font-family:"Plus Jakarta Sans";font-size:13px}
+.shops{display:flex;gap:8px;padding:8px 12px;overflow:hidden}
+.shop{flex:0 0 112px;background:#fff;border:1px solid #e6e4dc;border-radius:12px;padding:8px}
+.shop i{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;color:#fff;font-style:normal;font-weight:800;margin-bottom:4px}
+.shop small{display:block;color:#1f7a4d;font-weight:600}
+.feed{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:8px 12px}
+.pc{background:#fff;border:1px solid #e6e4dc;border-radius:12px;padding:8px;opacity:0;transform:translateY(16px);animation:pop .6s forwards}
+.pc .img{height:62px;border-radius:9px;display:grid;place-items:center;font-size:28px;position:relative}
+.pc .off{position:absolute;left:0;top:0;background:#1f7a4d;color:#fff;font-size:9px;font-weight:800;padding:2px 5px;border-radius:9px 0 7px 0}
+.pc b{display:block;margin-top:5px;font-size:11px;line-height:1.25}
+.pc .row{display:flex;justify-content:space-between;align-items:center;margin-top:4px}
+.pc .add{background:#1f7a4d;color:#fff;border-radius:7px;padding:2px 8px;font-weight:700}
+@keyframes pop{to{opacity:1;transform:none}}
+.toast{position:absolute;left:12px;right:12px;bottom:14px;background:#14162b;color:#fff;border-radius:12px;padding:10px 12px;display:flex;justify-content:space-between;transform:translateY(120%);animation:toast 6s 2.5s infinite}
+@keyframes toast{0%,8%{transform:translateY(120%)}14%,70%{transform:none}78%,100%{transform:translateY(120%)}}
+/* sections */
+section{padding:90px 0}
+.kicker{color:var(--royal-2);font-weight:700;font-size:14px;letter-spacing:1.2px;text-transform:uppercase}
+h2{font-size:clamp(28px,4vw,42px);font-weight:800;margin:10px 0 16px;letter-spacing:-.5px}
+.sub{color:var(--muted);font-size:18px;max-width:680px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:40px}
+@media(max-width:860px){.grid3,.grid2{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px;transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(20,22,60,.10)}
+.card h3{font-size:20px;margin:14px 0 8px}
+.card p{color:var(--muted);margin:0}
+.ico{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;font-size:26px}
+.step-n{font-family:"Plus Jakarta Sans";font-weight:800;font-size:44px;background:linear-gradient(135deg,var(--royal-2),var(--rose));-webkit-background-clip:text;background-clip:text;color:transparent}
+/* problem band */
+.band{background:linear-gradient(180deg,transparent,color-mix(in srgb,var(--royal) 7%,transparent))}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:36px}
+@media(max-width:760px){.vs{grid-template-columns:1fr}}
+.vs .card ul{margin:10px 0 0;padding-left:20px;color:var(--muted)}
+.vs .card li{margin:6px 0}
+.vs .good{border-color:color-mix(in srgb,var(--leaf) 45%,var(--line));background:color-mix(in srgb,var(--leaf) 6%,var(--card))}
+/* fair feed animation */
+.lanes{margin-top:36px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px;overflow:hidden}
+.lane{display:flex;align-items:center;gap:12px;margin:12px 0}
+.lane span.name{width:150px;font-weight:600;font-size:14px;flex-shrink:0}
+.track{flex:1;display:flex;gap:10px}
+.chip{flex:0 0 54px;height:40px;border-radius:12px;display:grid;place-items:center;color:#fff;font-weight:800;opacity:.25;transform:scale(.9);transition:all .4s}
+.chip.on{opacity:1;transform:none;box-shadow:0 8px 18px rgba(0,0,0,.15)}
+.lanes .legend{color:var(--muted);font-size:14px;margin-top:12px}
+@media(max-width:560px){.lane span.name{width:92px;font-size:12px}.chip{flex-basis:40px}}
+/* name story */
+.story{background:linear-gradient(135deg,#1d2470,#2a3494);color:#fff;border-radius:28px;padding:56px;position:relative;overflow:hidden}
+.story p{color:#dfe2ff;max-width:720px;font-size:18px}
+.story .mark{position:absolute;right:-30px;bottom:-30px;width:220px;opacity:.18;animation:spin 40s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media(max-width:600px){.story{padding:32px}}
+/* langs */
+.langs{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.lang{padding:14px 20px;border-radius:16px;background:var(--card);border:1px solid var(--line);font-size:20px;font-weight:700}
+/* pilot */
+.pilot{display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center}
+@media(max-width:860px){.pilot{grid-template-columns:1fr}}
+.ticket{background:var(--turmeric);color:#1b1b1b;border-radius:24px;padding:32px;transform:rotate(-2deg);box-shadow:0 30px 60px rgba(255,180,0,.25)}
+.ticket h3{font-size:30px}
+.ticket ul{padding-left:20px;margin:14px 0 0}
+/* roadmap */
+.road{position:relative;margin-top:40px;padding-left:28px;border-left:3px dashed var(--line)}
+.road .pt{position:relative;margin:0 0 26px}
+.road .pt:before{content:"";position:absolute;left:-38px;top:5px;width:17px;height:17px;border-radius:50%;background:var(--royal-2);box-shadow:0 0 0 5px color-mix(in srgb,var(--royal-2) 20%,transparent)}
+.road .pt.done:before{background:var(--leaf)}
+.road b{font-family:"Plus Jakarta Sans"}
+.road p{margin:2px 0 0;color:var(--muted)}
+/* faq */
+details{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 22px;margin:12px 0}
+summary{cursor:pointer;font-weight:700;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";float:right;transition:transform .3s}
+details[open] summary:after{transform:rotate(45deg)}
+details p{color:var(--muted);margin:10px 0 0}
+/* cta + footer */
+.final{text-align:center;background:radial-gradient(800px 300px at 50% 0,color-mix(in srgb,var(--royal-2) 22%,transparent),transparent);}
+footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
+/* reveal */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.pc{opacity:1;transform:none}.toast{transform:none}}
+</style>
+</head>
+<body>
+<nav aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="mark.svg" alt="" width="36" height="36">Sri Varahi</a>
+    <div class="links">
+      <a class="hide-s" href="#idea">Idea</a>
+      <a class="hide-s" href="#fair">Fair feed</a>
+      <a class="hide-s" href="#shops">For shops</a>
+      <a href="https://sri-lalitha-store.rohit125rrr125.workers.dev/" rel="noopener">Open the app</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="blob b1" aria-hidden="true"></div><div class="blob b2" aria-hidden="true"></div>
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Hyperlocal · Made in India · Free pilot for shops</span>
+      <h1>Your local shops,<br><em>online. Fair for every shop.</em></h1>
+      <p class="lead">Sri Varahi brings the kirana stores, supermarkets and mini-marts of your neighbourhood into one app. Every shop keeps its own prices, its own riders and its own UPI. Customers get one basket, one checkout and delivery in a slot they choose.</p>
+      <div class="cta">
+        <a class="btn btn-main" href="https://sri-lalitha-store.rohit125rrr125.workers.dev/" rel="noopener">See the live app →</a>
+        <a class="btn btn-ghost" href="https://sri-lalitha-store.rohit125rrr125.workers.dev/sell/" rel="noopener">Own a shop? Join free</a>
+      </div>
+    </div>
+    <div class="phone" role="img" aria-label="The Sri Varahi app: shops near you and products from all of them">
+      <div class="screen">
+        <div class="s-top"><b>Sri Varahi</b><div class="s-search">Search rice, atta, milk, soap…</div></div>
+        <div class="s-sec">Shops near you</div>
+        <div class="shops">
+          <div class="shop"><i style="background:#1f7a4d">G</i><b>Green Basket</b><small>Open · 0.2 km</small></div>
+          <div class="shop"><i style="background:#b4531a">A</i><b>Annapoorna</b><small>Open · 0.3 km</small></div>
+          <div class="shop"><i style="background:#2a3494">D</i><b>Daily Fresh</b><small>Open · 0.6 km</small></div>
+        </div>
+        <div class="s-sec">Picks from shops near you</div>
+        <div class="feed">
+          <div class="pc" style="animation-delay:.3s"><div class="img" style="background:#fff3c4"><span class="off">7% OFF</span>🧈</div><b>Butter 100 g</b><div class="row"><span>₹59</span><span class="add">Add</span></div></div>
+          <div class="pc" style="animation-delay:.5s"><div class="img" style="background:#e3f3e8">🥬</div><b>Fresh greens</b><div class="row"><span>₹15</span><span class="add">Add</span></div></div>
+          <div class="pc" style="animation-delay:.7s"><div class="img" style="background:#fde3d4"><span class="off">9% OFF</span>🍚</div><b>Sona Masoori 10 kg</b><div class="row"><span>₹580</span><span class="add">Add</span></div></div>
+          <div class="pc" style="animation-delay:.9s"><div class="img" style="background:#e4e7fb">🍪</div><b>Biscuits 800 g</b><div class="row"><span>₹96</span><span class="add">Add</span></div></div>
+        </div>
+        <div class="toast"><span>✓ Delivers to 560030</span><span>Today 6–8 PM</span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="band" id="problem">
+  <div class="wrap rv">
+    <span class="kicker">The problem</span>
+    <h2>The corner shop is losing its customers to apps.</h2>
+    <p class="sub">Quick-commerce apps run their own dark stores. The kirana store that knows your family for twenty years has no way to take your order on the phone, and no way to compete on visibility.</p>
+    <div class="vs">
+      <div class="card"><h3>Today</h3><ul><li>Big apps decide which products you see</li><li>Shops pay commissions or are left out entirely</li><li>Money goes through the platform first</li><li>Riders race the clock</li></ul></div>
+      <div class="card good"><h3>With Sri Varahi</h3><ul><li>Every nearby shop is seen, by design</li><li>The shop sets its own price and keeps its customers</li><li>Customers pay the shop directly: cash or the shop's own UPI</li><li>Delivery in slots the customer picks, by the shop's own riders</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="idea">
+  <div class="wrap">
+    <div class="rv"><span class="kicker">Our idea</span><h2>One app. Many shops. Each one stays the boss.</h2>
+    <p class="sub">We give every shop a complete online store, inside one app customers already trust.</p></div>
+    <div class="grid3">
+      <div class="card rv"><div class="step-n">01</div><h3>Shops near you</h3><p>Customers see every live shop that delivers to their door, open ones first, nearest first, and tap into any of them.</p></div>
+      <div class="card rv"><div class="step-n">02</div><h3>One shop per basket</h3><p>A basket holds one shop's items, so one shop packs it and one rider brings it. Switching shops is a clear, one-tap choice.</p></div>
+      <div class="card rv"><div class="step-n">03</div><h3>Check delivery first</h3><p>On any product, type a pincode or pick a saved address: the app says which store delivers, the next free slot and the delivery charge.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="fair" class="band">
+  <div class="wrap">
+    <div class="rv"><span class="kicker">Our ideology</span><h2>A fair feed: no shop is left out.</h2>
+    <p class="sub">Most marketplaces show whoever pays or sells most. Our home feed takes turns: every shop's best offer, then every shop's second best, and so on. Inside a turn we weigh real sales, ratings, nearness and savings against MRP, with a lift for shops that had few orders this week and a daily rotation so first place moves around.</p></div>
+    <div class="lanes rv" aria-label="Animation: shops take turns in the feed">
+      <div class="lane"><span class="name">Big supermarket</span><div class="track" data-lane="0"></div></div>
+      <div class="lane"><span class="name">Kirana store</span><div class="track" data-lane="1"></div></div>
+      <div class="lane"><span class="name">New mini-mart</span><div class="track" data-lane="2"></div></div>
+      <p class="legend">Each tile is a spot in the customer's feed. The spots go round the shops in turn, so a new shop is seen on its first day.</p>
+    </div>
+  </div>
+</section>
+
+<section id="shops">
+  <div class="wrap">
+    <div class="rv"><span class="kicker">For shop owners</span><h2>Everything a shop needs to run online.</h2>
+    <p class="sub">The same tools a big chain has, for the shop on your street.</p></div>
+    <div class="grid3">
+      <div class="card rv"><div class="ico" style="background:#fff3c4">💰</div><h3>Your prices, your UPI</h3><p>Set your own prices and offers. Customers pay you directly; the platform never holds your money.</p></div>
+      <div class="card rv"><div class="ico" style="background:#e3f3e8">🛵</div><h3>Your riders, your slots</h3><p>Add your own riders and delivery slots. A 4-digit PIN confirms every delivery at the door.</p></div>
+      <div class="card rv"><div class="ico" style="background:#e4e7fb">📊</div><h3>Owner dashboard</h3><p>Orders, stock, staff, coupons, banners, reports and GST invoices, for every store you run.</p></div>
+      <div class="card rv"><div class="ico" style="background:#fde3d4">🤝</div><h3>Your customers (CRM)</h3><p>See regulars, send offers in their language, handle complaints and follow-up calls.</p></div>
+      <div class="card rv"><div class="ico" style="background:#f3e3fb">🏪</div><h3>Many stores, one shop</h3><p>Run several branches; each order goes to the nearest store that has everything in stock.</p></div>
+      <div class="card rv"><div class="ico" style="background:#dff4f9">🧾</div><h3>Product details done right</h3><p>Veg / non-veg mark, highlights, ingredients, shelf life and storage, the way customers expect from big apps.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="languages" class="band">
+  <div class="wrap rv">
+    <span class="kicker">For customers</span>
+    <h2>Speaks your language.</h2>
+    <p class="sub">The whole app, product names and categories work in four languages, because the best customers of a local shop are often not English readers.</p>
+    <div class="langs"><span class="lang">English</span><span class="lang" lang="te">తెలుగు</span><span class="lang" lang="or">ଓଡ଼ିଆ</span><span class="lang" lang="hi">हिन्दी</span></div>
+  </div>
+</section>
+
+<section id="name">
+  <div class="wrap">
+    <div class="story rv">
+      <img class="mark" src="mark.svg" alt="" aria-hidden="true">
+      <span class="kicker" style="color:#ffd400">The name</span>
+      <h2>Why "Sri Varahi"?</h2>
+      <p>Our story began with Sri Lalitha, a family rice and flour brand selling through its own stores. In tradition, Varahi leads the forces of Goddess Lalitha: a protector who stands with the many. That is the role we want for the platform: standing behind every small shop, so the neighbourhood economy stays in the neighbourhood.</p>
+    </div>
+  </div>
+</section>
+
+<section id="pilot" class="band">
+  <div class="wrap pilot">
+    <div class="rv"><span class="kicker">Free pilot</span><h2>The first shops join free.</h2>
+    <p class="sub">We are signing our first partner shops in Bengaluru and in South Odisha / North Andhra. Pilot shops get the full app at no cost for the first few months.</p>
+    <div class="cta" style="margin-top:24px"><a class="btn btn-royal" href="https://sri-lalitha-store.rohit125rrr125.workers.dev/sell/" rel="noopener">Ask to join →</a></div></div>
+    <div class="ticket rv"><h3>Pilot pass</h3><ul><li>Full owner dashboard</li><li>Up to 2 stores per business</li><li>Your own riders, UPI and prices</li><li>Free for the first few months</li></ul></div>
+  </div>
+</section>
+
+<section id="roadmap">
+  <div class="wrap">
+    <div class="rv"><span class="kicker">Where we are</span><h2>Built, tested, and next.</h2></div>
+    <div class="road rv">
+      <div class="pt done"><b>Live</b><p>Many shops in one app, owner dashboards, staff and riders, UPI and cash, GST invoices, CRM, four languages, fair feed, delivery check by pincode.</p></div>
+      <div class="pt done"><b>Live</b><p>Shopkeepers can ask to join from the app; the platform approves and they open their own shop screens.</p></div>
+      <div class="pt"><b>Next</b><p>Signing pilot shops, bulk (B2B) buying per shop, and a live rider map.</p></div>
+      <div class="pt"><b>Later</b><p>Medical stores, and simple plans for shops after the pilot.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="band">
+  <div class="wrap rv">
+    <span class="kicker">Questions</span><h2>Frequently asked</h2>
+    <details><summary>Who gets the money when a customer pays?</summary><p>The shop. Customers pay by cash on delivery or straight to the shop's own UPI ID. Sri Varahi never holds the money.</p></details>
+    <details><summary>What does a shop pay to join?</summary><p>Nothing during the free pilot: the first shops get the full app free for the first few months, with up to two stores per business.</p></details>
+    <details><summary>Who delivers the orders?</summary><p>Each shop's own riders, in delivery slots the customer picks. A 4-digit PIN confirms every delivery.</p></details>
+    <details><summary>Which languages does the app speak?</summary><p>English, Telugu, Odia and Hindi.</p></details>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap rv">
+    <h2>See it for yourself.</h2>
+    <p class="sub" style="margin:0 auto 28px">The app is live. Browse the shops near Adugodi, Bengaluru, check delivery on any product, and see how a basket works.</p>
+    <div class="cta" style="justify-content:center"><a class="btn btn-royal" href="https://sri-lalitha-store.rohit125rrr125.workers.dev/" rel="noopener">Open Sri Varahi →</a></div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>© 2026 Sri Varahi. Local shops, delivered.</span><span><a href="https://sri-lalitha-store.rohit125rrr125.workers.dev/" rel="noopener">App</a> · <a href="https://sri-lalitha-store.rohit125rrr125.workers.dev/sell/" rel="noopener">Sell on Sri Varahi</a></span></div></footer>
+
+<script>
+// Reveal on scroll
+const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: 0.15 });
+document.querySelectorAll('.rv').forEach((el) => io.observe(el));
+// Fair feed: spots light up shop by shop, in turns
+const colors = ['#2a3494', '#b4531a', '#1f7a4d'];
+const tracks = [...document.querySelectorAll('.track')];
+const N = 6;
+tracks.forEach((t, i) => { for (let k = 0; k < N; k++) { const c = document.createElement('span'); c.className = 'chip'; c.style.background = colors[i]; c.textContent = k * 3 + i + 1; t.appendChild(c); } });
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+let step = 0;
+function tick() {
+  const all = tracks.map((t) => [...t.children]);
+  if (step === N * 3) { all.flat().forEach((c) => c.classList.remove('on')); step = 0; return; }
+  const turn = Math.floor(step / 3), lane = step % 3;
+  all[lane][turn].classList.add('on');
+  step++;
+}
+if (reduce) tracks.forEach((t) => [...t.children].forEach((c) => c.classList.add('on')));
+else setInterval(tick, 550);
+</script>
+</body>
+</html>
