@@ -89,6 +89,7 @@ nav .links a{text-decoration:none;color:var(--muted)}nav .links a:hover{color:va
 @keyframes toast{0%,8%{transform:translateY(120%)}14%,70%{transform:none}78%,100%{transform:translateY(120%)}}
 /* sections */
 section{padding:90px 0}
+@media(max-width:600px){section{padding:60px 0}.hero{padding:56px 0 70px}.card{padding:22px}}
 .kicker{color:var(--royal-2);font-weight:700;font-size:14px;letter-spacing:1.2px;text-transform:uppercase}
 h2{font-size:clamp(28px,4vw,42px);font-weight:800;margin:10px 0 16px;letter-spacing:-.5px}
 .sub{color:var(--muted);font-size:18px;max-width:680px}
@@ -113,16 +114,16 @@ h2{font-size:clamp(28px,4vw,42px);font-weight:800;margin:10px 0 16px;letter-spac
 .lane{display:flex;align-items:center;gap:12px;margin:12px 0}
 .lane span.name{width:150px;font-weight:600;font-size:14px;flex-shrink:0}
 .track{flex:1;display:flex;gap:10px}
-.chip{flex:0 0 54px;height:40px;border-radius:12px;display:grid;place-items:center;color:#fff;font-weight:800;opacity:.25;transform:scale(.9);transition:all .4s}
+.chip{flex:1 1 0;min-width:0;max-width:64px;height:40px;border-radius:12px;display:grid;place-items:center;color:#fff;font-weight:800;opacity:.25;transform:scale(.9);transition:all .4s}
 .chip.on{opacity:1;transform:none;box-shadow:0 8px 18px rgba(0,0,0,.15)}
 .lanes .legend{color:var(--muted);font-size:14px;margin-top:12px}
-@media(max-width:560px){.lane span.name{width:92px;font-size:12px}.chip{flex-basis:40px}}
+@media(max-width:560px){.lane span.name{width:84px;font-size:12px}.track{gap:6px}.chip{height:34px;border-radius:10px;font-size:13px}}
 /* name story */
 .story{background:linear-gradient(135deg,#1d2470,#2a3494);color:#fff;border-radius:28px;padding:56px;position:relative;overflow:hidden}
 .story p{color:#dfe2ff;max-width:720px;font-size:18px}
 .story .mark{position:absolute;right:-30px;bottom:-30px;width:220px;opacity:.18;animation:spin 40s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
-@media(max-width:600px){.story{padding:32px}}
+@media(max-width:600px){.story{padding:32px 24px 120px}.story .mark{width:140px;right:-20px;bottom:-20px;opacity:.12}}
 /* langs */
 .langs{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
 .lang{padding:14px 20px;border-radius:16px;background:var(--card);border:1px solid var(--line);font-size:20px;font-weight:700}
